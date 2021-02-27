@@ -1,0 +1,214 @@
+.top{
+	grid-area: header;
+	background-color: black;
+	display: grid;
+	grid-template-columns: 1fr 1fr 3fr;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 15%;
+	grid-template-areas: 
+		"logo search top-right";
+}
+.logo{
+	grid-area: logo;
+	color: white;
+	width: 40px;
+	height: 40px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+		"img text";
+}
+.logo img{
+	grid-area: img;
+	height: 50px;
+	width: 90px;
+	padding-left: 2px;
+}
+.logo p{
+	margin: 0px;
+	width: 50px;
+	grid-area: text;
+	color: white;
+	background-color: lightgrey;
+}
+
+.search{
+	grid-area: search;
+	color: white;
+	padding-right: 200px;
+}
+
+.search input{
+	height: 50px;
+	width: 200px;
+	border-radius: 40px;
+	border: none;
+}
+
+.all{
+	grid-area: all;
+
+}
+.popular{
+	grid-area: popular;
+}
+.info{
+	grid-area: info;
+
+}
+.ebook{
+	grid-area: ebooks;
+
+}
+.sub{
+	grid-area: sub;
+	border-left: 2px solid white;
+	
+}
+.sub button{
+	background-color: red;
+	border: none;
+	height: 50px;
+	width: 100px;
+	font-size: 15px;
+}
+.links{
+	padding-top: 15px;
+	text-decoration: none;
+	color: white;
+}
+
+.top-right{
+	grid-area: top-right;
+	color:white;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+	text-align: center;
+	grid-template-areas: 
+		"all popular info ebooks sub"
+}
+
+
+.all h3{
+	color: blue;
+}
+
+.drop-list{
+	text-align: left;
+	color: black;
+	list-style-type: none;
+}
+
+.dropbtn{
+	border:none;
+	background-color: black;
+	color:white;
+	font-size: 17px;
+	padding-top: 15px;
+	padding-bottom:  10px;
+}
+
+.content-blogs{
+	background-color: white;
+	display: none;
+	position: absolute;
+	z-index: 1;
+	width: 40%;
+	margin-right: 16%;
+}
+.content-pop{
+	background-color: white;
+	color:black;
+	display: none;
+	position: absolute;
+	z-index: 1;
+	height: 20%;
+	width: 30%;
+	margin-right: 30%;
+}
+
+.top-links{
+	text-decoration: none;
+	color: blue;
+}
+.col-blogs{
+	float: left;
+}
+
+.show{
+	display: block;
+	
+}
+
+
+.main{
+	grid-area: content;
+	background-color: white;
+	text-align: center;
+	padding-bottom: 30%;
+
+}
+
+.bottom{
+	grid-area: footer;
+	background-color: black;
+	display: grid;
+	grid-template-columns: 300px 300px 300px 300px;
+	padding: 20px;
+	grid-column-gap: 20px;
+	grid-template-areas: 
+		" company blogs resources support";
+	text-align: center;
+}
+.social{
+	grid-area: social;
+	background-color: white;
+	text-align: center;
+	border-right:  1px solid black;
+	padding-top: 20%;
+}
+.right{
+	grid-area: side;
+	background-color: white;
+	border-left:  1px solid black;
+	text-align: center;
+}
+
+.wrapper{
+	display: grid;
+	margin: 0 auto;
+	grid-template-columns: 1fr 5fr 1fr;
+	grid-template-areas: 
+		"header header header"
+		"social content side"
+		"footer footer footer";
+
+}
+.company{
+	background-color: white;
+	grid-area: company;
+	
+}
+.blogs{
+	background-color: white;
+	grid-area: blogs;
+	
+	
+}
+.resources{
+	background-color: white;
+	grid-area: resources;
+	
+}
+.support{
+	background-color: white;
+	grid-area: support;
+	
+}
+
+.footer-lists{
+	text-align: center;
+	padding-left: 5%;
+	list-style-type: none;
+}

@@ -1,0 +1,177 @@
+
+html,body {
+	margin: 0%;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+:root {
+	
+	/*custom colors*/
+	--text-gray: #3f4954;
+	--text-light: #686666da;
+	--bg-color: #0f0f0f;
+	--white: #ffffff;
+	--midnight: #104f55;
+	
+	/*Font-family*/
+	--Abel: 'Abel',cursive;
+	--Anton:'Anton',cursive;
+	--Josefin: 'Josefin',cursive;
+	--Lexend: 'Lexend',cursive;
+	--Livvic: 'Livvic',cursive;
+}
+
+/* Global classes*/
+a {
+	text-decoration: none;
+	color: var(--white);
+}
+
+ul {
+	list-style-type: none;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+/*--------x---- Global Classes -----X----*/
+.nav {
+	background: var(--text-gray);
+	padding: 0 2rem;
+	height: 0rem;
+	min-height: 10vh;
+	overflow: hidden;
+}
+
+.nav .nav-menu {
+	justify-content: space-between;
+}
+
+.nav .nav-items {
+	display: flex;
+	margin: 0;
+}
+
+.collapse {
+	height: 30rem;
+}
+
+.nav .nav-items .nav-link {
+	padding: 1.6rem 1rem;
+	font-size: 1.1rem;
+	position: relative;
+	font-family: var(--Abel);
+	font-size: 1.1rem;
+}
+
+.nav .nav-items .nav-link:hover {
+	background-color: var(--midnight);
+}
+
+.nav .nav-items .nav-link:hover a {
+	color: var(--white);
+}
+
+.nav .nav-brand a {
+	font-size: 1.6rem;
+	padding: 1rem 0;
+	display: block;
+	font-family: var(--Lexend);
+}
+
+.nav .social {
+	padding: 1rem 0;
+	background: red;
+	font-size: 1.1rem;
+	font-family: var(--Livvic);
+}
+
+.nav .social i:hover {
+	color: #a1c4cf;
+}
+
+main .site-title {
+	
+}
+
+main .site-title .component .heading{
+	font-family: var(--Anton);
+	font-size: 2rem;
+	padding-left: 50px;
+}
+
+main .site-title .component .description p{
+	font-size: 1.3rem;
+	font-family: var(--Lexend);
+	padding-left: 20px;
+}
+
+main .site-title .topheading h3 {
+	font-family: var(--Anton);
+	font-size: 2rem;
+	padding-left: 50px;
+}
+
+main .site-title .topheading p {
+	font-size: 1.3rem;
+	font-family: var(--Lexend);
+	padding-left: 20px;
+}
+
+.row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.side {
+	-ms-flex: 10%;
+	flex: 10%;
+	background-color: #C1C4D1;
+	padding: 20px;
+}
+
+.main {
+	-ms-flex: 70%;
+	flex: 60%;
+	background-color: #B3B7D2;
+	padding: 20px;
+	padding-left: 100px;
+}
+
+footer.footer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background: #5E6BBD;
+}
+
+footer.footer .container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+
+footer.footer .newsletter {
+	padding-left: 500px;
+}
+
+footer.footer .follow-us {
+	padding-left: 500px;
+}
+	
+	
+@media only screen and (max-width:750px) {
+	.nav .nav-menu .nav-items {
+		flex-direction: column;
+	}
+	
+	
+}
+
