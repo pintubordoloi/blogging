@@ -46,6 +46,7 @@
 	border: none;
 }
 
+
 .all{
 	grid-area: all;
 
@@ -145,9 +146,22 @@
 .main{
 	grid-area: content;
 	background-color: white;
-	text-align: center;
+	text-align: left;
 	padding-bottom: 30%;
+}
 
+.heading {
+	font-size: 30px;
+	text-decoration: underline;
+}
+
+.mainheading {
+	font-size: 40px;
+	text-decoration: underline;
+}
+
+.description {
+	font-size: 25px;
 }
 
 .bottom{
