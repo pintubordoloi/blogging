@@ -179,13 +179,12 @@
 	grid-area: social;
 	background-color: white;
 	text-align: center;
-	border-right:  1px solid black;
+	
 	padding-top: 20%;
 }
 .right{
 	grid-area: side;
 	background-color: white;
-	border-left:  1px solid black;
 	text-align: center;
 }
 
