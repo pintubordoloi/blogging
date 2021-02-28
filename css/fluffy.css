@@ -1,0 +1,44 @@
+.social{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	height: 50px;
+}
+.main{
+	border-right:  1px solid black;
+	border-left:  1px solid black;
+}
+
+
+.sub-modal{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	height: 40%;
+	margin: 0px auto;
+	overflow: auto;/*enable scholling*/
+	left: 30%;
+	right: 30%;
+	background-color: rgba(0,0,0,0);
+
+}
+
+.modal-content{
+	padding:20px;
+	margin: auto;
+	background-color:lightblue;
+	color: black;
+
+}
+.close{
+	color: grey;
+	float: right;
+	font-size: 20px;
+	font-weight: bold;
+}
+.close:hover,
+.close:focus{
+	color: red;
+	text-decoration: none;
+	cursor: pointer;
+}
