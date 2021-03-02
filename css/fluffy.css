@@ -42,3 +42,41 @@
 	text-decoration: none;
 	cursor: pointer;
 }
+
+
+.copyr{
+	grid-area: copy;
+	margin-right: 50%;
+
+}
+
+.policy{
+	grid-area: text;
+	margin: 0px;
+}
+.social-bottom{
+	margin: 0px;
+	grid-area: links;
+}
+.terms{
+	display: grid;
+	grid-area: terms;
+	grid-template-columns: 300px 500px;
+	grid-template-areas: 
+		" links text";
+}
+
+
+.copyR{
+	font-size: 12px;
+	margin-left: 20px;
+	margin-right: 20px;
+	display: grid;
+	grid-column-gap: 0px;
+	grid-template-columns: 500px 500px; ;
+	grid-template-areas: 
+		"copy terms";
+}
+.bottom{
+	padding-left: 3%;
+}
