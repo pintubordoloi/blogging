@@ -164,6 +164,13 @@
 	font-size: 25px;
 }
 
+.copyR{
+	grid-area:copyright;
+	background-color: white;
+	margin-top: 10px;
+	color: black;
+}
+
 .bottom{
 	grid-area: footer;
 	background-color: black;
@@ -172,7 +179,8 @@
 	padding: 20px;
 	grid-column-gap: 20px;
 	grid-template-areas: 
-		" company blogs resources support";
+		" company blogs resources support"
+		"copyright copyright copyright copyright";
 	text-align: center;
 }
 .social{
@@ -225,3 +233,4 @@
 	padding-left: 5%;
 	list-style-type: none;
 }
+
