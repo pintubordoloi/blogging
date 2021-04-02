@@ -1,11 +1,11 @@
 .top{
 	grid-area: header;
-	background-color: black;
+	background-color: #008B8B;
 	display: grid;
 	grid-template-columns: 1fr 1fr 3fr;
 	text-align: center;
 	padding-top: 10px;
-	padding-bottom: 15%;
+	padding-bottom: 5%;
 	grid-template-areas: 
 		"logo search top-right";
 }
@@ -97,13 +97,13 @@
 
 .drop-list{
 	text-align: left;
-	color: black;
+	color: #008B8B;
 	list-style-type: none;
 }
 
 .dropbtn{
 	border:none;
-	background-color: black;
+	background-color: #008B8B;
 	color:white;
 	font-size: 17px;
 	padding-top: 15px;
@@ -173,7 +173,7 @@
 
 .bottom{
 	grid-area: footer;
-	background-color: black;
+	background-color: #008B8B;
 	display: grid;
 	grid-template-columns: 300px 300px 300px 300px;
 	padding: 20px;
@@ -233,4 +233,13 @@
 	padding-left: 5%;
 	list-style-type: none;
 }
-
+.grid_background {
+	background-color:$gray-200;
+}
+.hov {
+	background-color:yellow;
+	opacity:0.8;
+}
+.hov:hover {
+  opacity:1;
+}
