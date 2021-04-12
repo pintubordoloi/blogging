@@ -239,7 +239,7 @@
 	list-style-type: none;
 }
 .grid_background {
-	background-color:$gray-200;
+	background-color:gray-200;
 }
 .hov {
 	background-color:#ffffff;
