@@ -69,6 +69,8 @@
 }
 .sub button{
 	background-color: red;
+	border-radius:14px;
+	opacity:0.9;
 	border: none;
 	height: 50px;
 	width: 100px;
@@ -111,20 +113,22 @@
 }
 
 .content-blogs{
-	background-color: white;
+	background-color: #ffffff;
 	display: none;
 	position: absolute;
 	z-index: 1;
+	border-radius:20px;
 	width: 40%;
 	margin-right: 16%;
 }
 .content-pop{
-	background-color: white;
+	background-color:#ffffff;
 	color:black;
 	display: none;
 	position: absolute;
 	z-index: 1;
 	height: 20%;
+	border-radius:20px;
 	width: 30%;
 	margin-right: 30%;
 }
@@ -185,21 +189,22 @@
 }
 .social{
 	grid-area: social;
-	background-color: white;
+	background-color:#f1f1f1;
 	text-align: center;
 	
 	padding-top: 20%;
 }
 .right{
 	grid-area: side;
-	background-color: white;
+	background-color: #f1f1f1;
 	text-align: center;
 }
 
 .wrapper{
 	display: grid;
+	background-color:#f1f1f1;
 	margin: 0 auto;
-	grid-template-columns: 1fr 5fr 1fr;
+	grid-template-columns: 1fr 6fr 1fr;
 	grid-template-areas: 
 		"header header header"
 		"social content side"
@@ -237,9 +242,38 @@
 	background-color:$gray-200;
 }
 .hov {
-	background-color:yellow;
-	opacity:0.8;
+	background-color:#ffffff;
+	padding:5%;
+	margin:10%;
+	border-radius: 10px;
+	width:300px;
+	height:250px;
+	
 }
-.hov:hover {
+/*.hov:hover {
   opacity:1;
 }
+*/
+
+
+.flex-container {
+	display:flex;
+	background-color:#f1f1f1;
+	
+	}
+	
+.img-fluidd {
+	border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  width:260px;
+  height:130px;
+}
+.btn-btn-outline-success{
+	
+	background-color:#33ffff;
+	opacity:0.7;
+	border-radius:8px;
+
+}
+
