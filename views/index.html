@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale = 1.0">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/extra.css">
+	<link rel="stylesheet" type="text/css" href="../css/fluffy.css">
+	 <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="../css/all.css">
+	<title>Blog</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="top">
+			<div class="logo">
+				<img src="../image/logo.jpg" alt ="log">
+				<p>Edu Specs</p>
+			</div>
+			 <div class="container-fluid">
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn-btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+			<div class="top-right">
+				<div class="all">
+					<button class="dropbtn allBlogs" onclick=showBlogs()>All Blogs </button>
+					<div class="content-blogs">
+						<div class="tech col-blogs">
+							<h3>Tech</h3>
+							<ul class="drop-list">
+								<li>Machine Learning</li>
+								<li>Data Science</li>
+								<li>Blockchain Technology</li>
+								<li>Deeplearning</li>
+								<a href="" class="top-links">See more</a>
+							</ul>
+						</div>
+						<div class="management col-blogs">
+							<h3>Management</h3>
+							<ul class="drop-list">
+								<li>Corporate Finance</li>
+								<li>Digital Marketing</li>
+								<li>Business Valuation</li>
+								<li>Financial Markets</li>
+								<a href="" class="top-links">See more</a>
+							</ul>
+						</div>		
+					</div>
+				</div>
+				<div class=" Popular pop">
+					<button class="dropbtn"  onclick=showPop()>Popular</button>
+					<div class="content-pop">
+						<div class="col-pop">
+							
+							<p>This is something about Popular tags</p>
+						</div>
+					</div>
+				</div>
+				<a href="" class="links info">Infographics</a>
+				<a href="" class="links ebooks">E-books</a>
+				
+		<!--The subscribe button content--->
+				<div class="sub">
+					<button class="sub-btn" >Subscribe</button>
+					<div class = "sub-modal">
+						<div class="modal-content">
+							<span class="close">&times; <!--the x for closing--></span>
+							<form>
+								<h4>Subscribe to our Newsletter</h4>
+								<label>Email:</label><input type="email" required placeholder="Enter Email">
+								<button>Subscbibe</button>
+							</form>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+
+		<div class="main">
+			<div>
+				<h2 class="mainheading"> Digital Marketing: Overview</h2>
+				<div class="description">
+					<p>Digital Marketing can be refferred as the subset of Marketing, which utilizes 
+					internet, interlink able devices such as desktop, laptop, tablet, and smartphone etc
+					and various online digital platforms to promote products and services of different businesses.</p>
+				</div>
+				<img class="postPhoto" src="../asset/DigitalMarketing/topphoto.JPG" alt="Top Photo">
+			</div>
+			
+			<div>
+				<h2 class="mainheading">Digital Marketing Componetns</h2>
+				<img src="../asset/DigitalMarketing/component.JPG" alt="Digital Marketing Component">
+				
+			</div>
+			
+			<div>
+				<h3 class="heading">1.Search Engine Marketing</h3>
+				<div class="description">
+					<p>Search Engine Marketing or SEM can be defined as the process of gaining website
+					traffic by puchasing advertosements on search engines. There are many search engine marketing
+					platforms, in which Google AdWords, Bing AdWords and Yahoo: Search Ads are some popular search engine
+					marketing plaforms.</p>
+				</div>
+				<img class="postPhoto" src="../asset/DigitalMarketing/searchengine.JPG" alt="Search Engine">
+				<div class="description">
+					<p>So, the greatest strength of SEM is that it offers advertisers the opportunity to put their ads 
+					in front of right customers who want to buy the product or service at same instant.</p>
+				</div>
+			</div>
+			
+			<div>
+				<h3 class="heading">2.Social Media Marketing </h3>
+				<div class="description">
+					<p>Social Media Marketing (SMM), can be defined as the amrketing refers to process of gaining traffic 
+					or attention through social media platforms. And, in this era of internet there is no one who is hidden from it.</p>
+				 </div>
+				 <img class="postPhoto" src="../asset/DigitalMarketing/socialmedia.JPG" alt="Social Media">
+				 <div class="description">
+					 <p>The top most popular social media platforms are LinkedIn, Instagram, Pinterest,
+					  Facebook, Twitter, Snapchat and YouTube.</p>
+				</div>
+			</div>
+			
+			<div>
+				<h3 class="heading">3. Search Engine Optimization</h3>
+				<div class="description">
+					<p>SEO or Search Engine Optimization can be defined as the process of getting traffic
+					from the <b>"free","organic","editorial" or "natural"</b> search results on search engines.</p>
+				</div>
+				<img class="postPhoto" src="../asset/DigitalMarketing/seo.JPG" alt="Search Engine Optimization">
+				<div class="description">
+					<p>There are three types of SEO techniques:</p>
+				<ol>
+					<li>White Hat</li>
+					<li>Black Hat</li>
+					<li>Grey Hat</li>
+				</ol>
+				</div>
+			</div>
+			
+			<div>
+				<h3 class="heading">4.Content Marketing </h3>
+				<div class="description">
+					<p>Content marketing is a strategic marketing approach focused on creating and distributing valuable, 
+					relevant, and consistent content (infographics, reports, eBooks, e-mails, blogs and videos) to attract 
+					and retain a clearly define audience to drive profitable customers action.</p>
+				 </div>
+				<img class="postPhoto" src="../asset/DigitalMarketing/contentmarketing.JPG" alt="Content Marketing">
+				<div class="description">
+					<p>Benefits of Content Marketing within enterprises are:</p>
+				<ul>
+					<li>Increased Sales</li>
+					<li>Got loyal customers</li>
+					<li>Cost Saving</li>
+				</ul>
+				</div>
+			</div>
+			
+			<div>
+				<h3 class="heading">5.Email Marketing</h3>
+				<div class="description">
+					<p>Email marketing can be referred as the subset of digital marketing which uses email to 
+					promote products and services. But, a better definition of email marketing can be delivered 
+					as the used of email to develop relationships with potential customers or/and clients.</p>
+				</div>
+				<img class="postPhoto" src="../asset/DigitalMarketing/emailmarketing.JPG" alt="Email Marketing">
+				<div class="description">
+					<p>There are 94% users of internet use email, while only 61% users use social media platforms. And 
+					75% of adult users prefer email marketing over others marketing methods. That's why we must know about 
+					about the marketing technique.</p>
+				</div>
+			</div>
+			
+			<div>
+				<h3 class="heading">6.Web Analytics</h3>
+				<img class="postPhoto" src="../asset/DigitalMarketing/webanalytics.JPG" alt="Web Analytics">
+				<div class="description">
+					<p>Web Analytics is the process of analysing the behaviour of visitors to a website. Web 
+					analytics enable a business to attract more visitors.</p>
+					<p>It can be categorised into two</p>
+				<ol>
+					<li>On-Site Web Analytics</li>
+					<li>Off-Site Web Analytics</li>
+				<ol>
+				</div>
+			</div>
+			
+			<div>
+				<h3 class="heading">7. Sales Funnel</h3>
+				<div class="description">
+					<p>The ultimate objective of digital marketing techniques is to bring potential customers 
+					and having sells for the respective businesses. To create sales funnel, you have to have 
+					knowledge a comprehensive digital marketing approach, you need to know all the verticals of 
+					digital marketing to create a profitable and successful sales funnel, an ideal sequence of funnel 
+					is when someone goes through to go from traffic to repeat customers. It is a system that adds and removes 
+					bariier for someone to become a customer to repeat customer when it is appropriate.</p>
+				</div>
+				<img class="postPhoto" src="../asset/DigitalMarketing/salesfunnel.JPG" alt="Sales Funnel">
+				<div class="description">
+					<p>It can be simple or short or highly complex.</p>
+				</div>
+			</div>
+			
+		
+		</div>
+		<div class="social">
+			<a href="#"><i class ="fab fa-google fa-2x"></i></a><br>
+			<a href="#"><i class="fab fa-facebook-f fa-2x"></i></a><br>
+			<a href="#"><i class="fab fa-twitter fa-2x"></i></a><br>
+			<a href="#"><i class="fab fa-instagram fa-2x"></i></a><br>
+			<a href="#"><i class="fab fa-youtube fa-2x"></i></a><br>	
+		</div>
+		<aside class="right">
+			<p>Right</p>
+		</aside>
+		<div class = "bottom ">
+			<div class ="company ">
+				<h3>Company</h3>
+				<ul class = "footer-lists">
+					<li>About</li>
+					<li>Team</li>
+					<li>Carreers</li>
+					<li>Student Reviews</li>
+
+				</ul>
+			</div>
+			<div class ="blogs ">
+				<h3>Blogs</h3>
+				<ul class = "footer-lists">
+					<li>Tech</li>
+					<li>Management</li>
+					<li>Popular</li>
+					<li>All blogs</li>
+				</ul>
+			</div>
+			<div class ="resources">
+				<h3>Resources</h3>
+				<ul class = "footer-lists">
+					<li>Infographic</li>
+					<li>E-books</li>
+				</ul>
+			</div>
+			<div class="support ">
+				<h3>Support</h3>
+				<ul class = "footer-lists">
+					<li>Contact Us</li>
+					<li>Subscribe</li>
+				</ul>
+			</div>
+			<div class="copyR">
+				<div class = "copyr">
+					&#169; 2015 to 2021 CFI Education Inc
+				</div>
+				<div class="terms">
+					<div class="social-bottom">
+						<a href="#"><i class ="fab fa-google "></i></a>
+					<a href="#"><i class="fab fa-facebook-f "></i></a>
+					<a href="#"><i class="fab fa-twitter "></i></a>
+					<a href="#"><i class="fab fa-instagram "></i></a>
+					<a href="#"><i class="fab fa-youtube "></i></a>	
+					</div>
+					<div class = "policy">
+						Privacy Policy Terms of Use Terms of Service Legal
+					</div>
+				</div>			
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>
