@@ -9,300 +9,242 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="css/all.css">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<title>Home Page</title>
 </head>
 <body>
-<div>
-	<div class="wrapper">
-	
-		<div class="top">
-			<div class="logo">
-				<img src="image/logo.jpg" alt ="log">
-				<p>Edu Specs</p>
-			</div>
-			
-  <div class="container-fluid">
-    <form class="d-flex">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn-btn-outline-success" type="submit">Search</button>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom">
+  <a href="#" class="navbarbrand navbar" >BLOOGING</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+ <form class="form form-inline ">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
-  </div>
-			
-			<div class="top-right">
-				<div class="all">
-					<button class="dropbtn allBlogs" onclick=showBlogs()>All Blogs </button>
-					<div class="content-blogs">
-						<div class="tech col-blogs">
-							<h3>Tech</h3>
-							<ul class="drop-list">
-								<li>Machine Learning</li>
-								<li>Data Science</li>
-								<li>Blockchain Technology</li>
-								<li>Deeplearning</li>
-								<a href="" class="top-links">See more</a>
-							</ul>
-						</div>
-						<div class="management col-blogs">
-							<h3>Management</h3>
-							<ul class="drop-list">
-								<li>Corporate Finance</li>
-								<li>Digital Marketing</li>
-								<li>Business Valuation</li>
-								<li>Financial Markets</li>
-								<a href="" class="top-links">See more</a>
-							</ul>
-						</div>		
-					</div>
-				</div>
-				<div class=" Popular pop">
-					<button class="dropbtn"  onclick=showPop()>Popular</button>
-					<div class="content-pop">
-						<div class="col-pop">
-							
-							<p>This is something about Popular tags</p>
-						</div>
-					</div>
-				</div>
-				<a href="" class="links info">Infographics</a>
-				<a href="" class="links ebooks">E-books</a>
-				
-		<!--The subscribe button content--->
-				<div class="sub">
-					<button class="sub-btn" >Subscribe</button>
-					<div class = "sub-modal">
-						<div class="modal-content">
-							<span class="close">&times; <!--the x for closing--></span>
-							<form>
-								<h4>Subscribe to our Newsletter</h4>
-								<label>Email:</label><input type="email" required placeholder="Enter Email">
-								<button>Subscbibe</button>
-							</form>
-						</div>
-					</div>
-				</div>				
-			</div>
-		</div>
-		<div class="container">
-	
-		<div class="row">
+  <div class="form collapse navbar-collapse" id="navbarSupportedContent">
+  
+  
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="textStyle nav-link" href="#">All Blogs <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="textStyle nav-link" href="#">Popular</a>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="textStyle nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Infographics
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="textStyle nav-link disabled" href="#">E-books</a>
 		
-			<div class="col-sm">
-			<div class="hov">
-				
-				<img src="./asset/machineLearning.JPG" class="img-fluidd" alt="Machine Learning Photo">
-				<h6>Machine Learning</h6>
-				<p>Machine learning is a subset of artificial intelligence. 
-					  <a href="" class="top-links"> See more</a></p>
-					
-			</div>
-			</div>
-			
-			
-			<div class="col-sm">
-			<div class="hov">
-				
-				<img src="./asset/dataScience.JPG" class="img-fluidd" alt="Data Science Photo">
-				<h6>Data Science</h6>
-				<p>Data science is an inter-disciplinary field which is the combination of three domains
-					  <a href="" class="top-links"> See more</a></p>
-				
-			</div>
-			</div>
-			
-			
-			
-			<div class="col-sm">
-			<div class="hov">
-				
-				
-				<img src="./asset/blockChain.JPG" class="img-fluidd" alt="Block Chain Photo">
-				<h6>Block Chain</h6>
-				<p>Blockchain is an immutable ledger or a data structure that holds transactions
-					  <a href="" class="top-links"> See more</a></p>
-				</div>
-			</div>
-			
-			
-			
-			</div>
-			
+      </li>
+	  <li class="nav-item active">
+		<button type="button" class="btn btn-danger">Subscbibe</button>
+	   </li>
+    </ul>
+   
+  </div>
+</nav>
+
+<section class="portfolio bg-light">
+<div class="container text-center">
+	
+
 			<div class="row">
 			
-			<div class="col-sm">
-			<div class="hov">
-				
+			<div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
 			
-				 <img src="./asset/corporateFinance.JPG" class="img-fluidd" alt="Corporate Finance Photo">
-				 <h6>Corporate Finance</h6>
-				 <p>Corporate finance is a subset of finance domain in which 
-					  <a href="" class="top-links"> See more</a></p>
-				 </div>
-			</div>
-			
-			<div class="col-sm">
-			<div class="hov">
-				
-			
-				<img src="./asset/digitalMarketing.JPG" class="img-fluidd" alt="Digital Marketing Photo">
-				<h6>Digital Marketing</h6>
-				<p>Digital Marketing can be referred as the subset of Marketing, which utilizes internet
-					  <a href="./views/digitalMarketing.html" class="top-links"> See more</a></p>
-				</div>
-				
-			</div>
-			
-			
-			<div class="col-sm">
-			<div class="hov">
-				
-				
-				<img src="./asset/businessValuation.JPG" class="img-fluidd" alt="Business Valuation Photo">
-				<h6>Business Valuation </h6>
-				<p>Business valuation is a general process of determining the economic value 
-					  <a href="" class="top-links"> See more</a></p>
-				</div>
-			</div>
-			
-			
-			</div >
-			
-			<div class="row">
-			
-			<div class="col-sm">
-			<div class="hov">
-				
-				
-				<img src="./asset/financialMarkets.JPG" class="img-fluidd" alt="Finance Market Photo">
-				<h6>Finance Market</h6>
-				<p>Financial markets refer broadly to any marketplace where the trading 
-					  <a href="" class="top-links"> See more</a></p>
-			</div>
-			</div>
-			
-			<div class="col-sm">
-			<div class="hov">
-				
-				<img src="./asset/technicalAnalysis.JPG" class="img-fluidd" alt="Techinical Analysis">
-				<h6>Technical Analysis</h6>
-				<p>Technical analysis is a method or collection of techniques to study or analyse 
-					  <a href="" class="top-links"> See more</a></p>
-				</div>
-			</div>
-			
-			<div class="col-sm">
-			<div class="hov">
-				
-				
-				<img src="./asset/stocksAndTypes.JPG" class="img-fluidd" alt="Stocks&types photo">
-				<h6>Stocks and its Types</h6>
-				<p>Types of Stocks- mainly there are two types of stocks the first one is common 
-					  <a href="" class="top-links"> See more</a></p>
-			</div>
-			</div>
-			
-			</div>
-			
-			
-			<div class="row">
-			
-			<div class="col-sm">
-			<div class="hov">
-				
-				<img src="./asset/cloudComputing.JPG" class="img-fluidd" alt="Cloud Computing Photo">
-				<h6>Cloud Computing</h6>	
-				<p>A model for enabling convenient on-demand network access to a shared pool   <a href="" class="top-links"> See more</a></p>
-				</div>
-			</div>
-			
-			<div class="col-sm">
-			<div class="hov">
-				
-				<img src="./asset/cryptoCurrency.JPG" class="img-fluidd" alt="CrytoCurrency Photo">
-				<h6>CrytoCurrency</h6>
-				<p>In layman language, cryptocurrencies can be understood by two words  <a href="" class="top-links"> See more</a></p>
-				</div>
-			</div>
-			
-			<div class="col-sm">
-			<div class="hov">
-				
-				<img src="./asset/webanalytics.JPG" class="img-fluidd" alt="Web Analytics">
-				<h6>6.Web Analytics</h6>
-				<p>Digital Marketing can be refferred as the subset
+				<div class="card">
+				<img src="./asset/machineLearning.JPG" class="card-img img-fluid" alt="Web Analytics">
+				<div class="card-body">
+				<h6 class="card-title">6.Web Analytics</h6>
+				<p class="card-text">Digital Marketing can be refferred as the subset
 					of Marketing  <a href="" class="top-links"> See more</a></p>
 				</div>
-			</div>
-			
-			</div>
-			
-
-		</div>
-		
-		
-		<div class="social">
-			<a href="#"><i class ="fab fa-google fa-2x"></i></a><br>
-			<a href="#"><i class="fab fa-facebook-f fa-2x"></i></a><br>
-			<a href="#"><i class="fab fa-twitter fa-2x"></i></a><br>
-			<a href="#"><i class="fab fa-instagram fa-2x"></i></a><br>
-			<a href="#"><i class="fab fa-youtube fa-2x"></i></a><br>	
-		</div>
-		<aside class="right">
-			<p>Right</p>
-		</aside>
-		<div class = "bottom ">
-			<div class ="company ">
-				<h3>Company</h3>
-				<ul class = "footer-lists">
-					<li>About</li>
-					<li>Team</li>
-					<li>Carreers</li>
-					<li>Student Reviews</li>
-
-				</ul>
-			</div>
-			<div class ="blogs ">
-				<h3>Blogs</h3>
-				<ul class = "footer-lists">
-					<li>Tech</li>
-					<li>Management</li>
-					<li>Popular</li>
-					<li>All blogs</li>
-				</ul>
-			</div>
-			<div class ="resources">
-				<h3>Resources</h3>
-				<ul class = "footer-lists">
-					<li>Infographic</li>
-					<li>E-books</li>
-				</ul>
-			</div>
-			<div class="support ">
-				<h3>Support</h3>
-				<ul class = "footer-lists">
-					<li>Contact Us</li>
-					<li>Subscribe</li>
-				</ul>
-			</div>
-			<div class="copyR">
-				<div class = "copyr">
-					&#169; 2015 to 2021 CFI Education Inc
 				</div>
-				<div class="terms">
-					<div class="social-bottom">
-						<a href="#"><i class ="fab fa-google "></i></a>
-					<a href="#"><i class="fab fa-facebook-f "></i></a>
-					<a href="#"><i class="fab fa-twitter "></i></a>
-					<a href="#"><i class="fab fa-instagram "></i></a>
-					<a href="#"><i class="fab fa-youtube "></i></a>	
-					</div>
-					<div class = "policy">
-						Privacy Policy Terms of Use Terms of Service Legal
-					</div>
-				</div>			
 			</div>
+			
+			<div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+			
+				<div class="card">
+				<img src="./asset/socialmedia.JPG" class="card-img img-fluid" alt="Web Analytics">
+				<div class="card-body">
+				<h6 class="card-title">6.Web Analytics</h6>
+				<p class="card-text">Digital Marketing can be refferred as the subset
+					of Marketing  <a href="" class="top-links"> See more</a></p>
+				</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+			
+				<div class="card">
+				<img src="./asset/cryptoCurrency.JPG" class="card-img img-fluid" alt="Web Analytics">
+				<div class="card-body">
+				<h6 class="card-title">6.Web Analytics</h6>
+				<p class="card-text">Digital Marketing can be refferred as the subset
+					of Marketing  <a href="" class="top-links"> See more</a></p>
+				</div>
+				</div>
+			</div>
+			
+			</div>
+			
+			
+			<div class="row">
+			
+			<div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+			
+				<div class="card">
+				<img src="./asset/cryptoCurrency.JPG" class="card-img img-fluid" alt="Web Analytics">
+				<div class="card-body">
+				<h6 class="card-title">6.Web Analytics</h6>
+				<p class="card-text">Digital Marketing can be refferred as the subset
+					of Marketing  <a href="" class="top-links"> See more</a></p>
+				</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+			
+				<div class="card">
+				<img src="./asset/machineLearning.JPG" class="card-img img-fluid" alt="Web Analytics">
+				<div class="card-body">
+				<h6 class="card-title">6.Web Analytics</h6>
+				<p class="card-text">Digital Marketing can be refferred as the subset
+					of Marketing  <a href="" class="top-links"> See more</a></p>
+				</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+			
+				<div class="card">
+				<img src="./asset/blockChain.JPG" class="card-img img-fluid" alt="Web Analytics">
+				<div class="card-body">
+				<h6 class="card-title">6.Web Analytics</h6>
+				<p class="card-text">Digital Marketing can be refferred as the subset
+					of Marketing  <a href="" class="top-links"> See more</a></p>
+				</div>
+				</div>
+			</div>
+			
+			</div>
+			
+			<div class="row">
+			
+			<div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+			
+				<div class="card">
+				<img src="./asset/cryptoCurrency.JPG" class="card-img img-fluid" alt="Web Analytics">
+				<div class="card-body">
+				<h6 class="card-title">6.Web Analytics</h6>
+				<p class="card-text">Digital Marketing can be refferred as the subset
+					of Marketing  <a href="" class="top-links"> See more</a></p>
+				</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+			
+				<div class="card">
+				<img src="./asset/blockChain.JPG" class="card-img img-fluid" alt="Web Analytics">
+				<div class="card-body">
+				<h6 class="card-title">6.Web Analytics</h6>
+				<p class="card-text">Digital Marketing can be refferred as the subset
+					of Marketing  <a href="" class="top-links"> See more</a></p>
+				</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+			
+				<div class="card">
+				<img src="./asset/technicalAnalysis.JPG" class="card-img img-fluid" alt="Web Analytics">
+				<div class="card-body">
+				<h6 class="card-title">6.Web Analytics</h6>
+				<p class="card-text">Digital Marketing can be refferred as the subset
+					of Marketing  <a href="" class="top-links"> See more</a></p>
+				</div>
+				</div>
+			</div>
+			
+			</div>
+			
+
 		</div>
-	</div>
+		</section>
+		
+		
+		
+		<section class="container ourservices text-center">
+		
+		<h1>SERVICES</h1>
+		<p> we are providing the best of best</p>
+		
+		<div class="row rowsetting">
+		  <div class="col-lg-3 col-md-3 col-sm-3 col-10 d-block m-auto">
+		     <div class="imgsetting d-block m-auto bg-warning">
+			   <i class="fas fa-building fa-3x text-white"> </i>
+			 </div>
+			 <h2>Company</h2>
+			 <p> About<br>
+                 Team<br>
+               Carreers<br>
+               Student Reviews </p>
+		  </div>
+		  
+		  <div class="col-lg-3 col-md-3 col-sm-3 col-10 d-block m-auto">
+		     <div class="imgsetting d-block m-auto bg-warning ">
+			   <i class="fab fa-blogger fa-3x text-white"> </i>
+			 </div>
+			 <h2>Blogs</h2>
+			 <p> Tech<br>
+            Management<br>
+              Popular<br>
+              All blogs<br>
+            </p>
+		  </div>
+		  <div class="col-lg-3 col-md-3 col-sm-3 col-10 d-block m-auto">
+		     <div class="imgsetting d-block m-auto bg-warning">
+			   <i class="fas fa-book fa-3x text-white"> </i>
+			 </div>
+			 <h2>Resources</h2>
+			 <p> Infographic<br>
+                E-books<br><br><br> </p>
+		  </div>
+		   <div class="col-lg-3 col-md-3 col-sm-3 col-10 d-block m-auto">
+		     <div class="imgsetting d-block m-auto bg-warning">
+			   <i class="far fa-envelope fa-3x text-white"> </i>
+			 </div>
+			 <h2>Support</h2>
+			 <p> Contact Us<br>
+               Subscribe<br><br><br> </p>
+		  </div>
+		
+		</div>
+	     </section>
 	
-	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
